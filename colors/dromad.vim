@@ -205,6 +205,28 @@ if s:t_Co >= 256
     hi Comment cterm=NONE
   endif
   unlet s:t_Co s:italics
+
+" Vimwiki Specific Styles
+" Vimwiki link
+  hi VimwikiWeblink1 ctermfg=DarkGreen
+
+" Vimwiki headers 1--4
+  hi VimwikiHeader1 ctermfg=214
+  hi VimwikiHeader2 ctermfg=214
+  hi VimwikiHeader3 ctermfg=214
+  hi VimwikiHeader4 ctermfg=214
+  hi VimwikiHeaderChar ctermfg=214
+
+" Vim tabs
+  hi TabLine ctermfg=DarkGreen ctermbg=23 cterm=NONE
+"hi TabLineSel ctermfg=LightGreen ctermbg=23 cterm=NONE
+  hi TabLineSel ctermfg=214 ctermbg=23 cterm=NONE
+
+" Vim search highlight
+  hi Search ctermfg=23 ctermbg=214 cterm=NONE
+
+" Vim visual mode
+  hi Visual ctermfg=23 ctermbg=214 cterm=NONE
   finish
 endif
 
